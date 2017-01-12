@@ -1,0 +1,47 @@
+.rv-shoe-wrapper{
+    .rv-shoe-thumbnail{
+        padding: 10px;
+        border: 1px solid #dcdada;
+        border-radius: 5px;
+        font-family: "HP Simplified Regular",Arial,sans-serif;
+        img{
+            width: 100%;
+            height: 250px;
+            display: block;
+            margin: 0 auto;
+        }
+        .rv-shoe-details{
+            overflow: hidden;
+            .rv-shoe-brand{
+                margin-top: 10px;
+                /*color: #0095D5;*/
+                margin-bottom: 5px;
+            }
+            .rv-shoe-price,.rv-shoe-category{
+                margin-bottom: 0;
+                font-size: 12px;
+            }
+            .rv-shoe-model{
+                margin-top: 10px;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+.rv-no-results{
+    padding: 10%;
+    color: gray;
+    font-family: "HP Simplified Regular",Arial,sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+.rv-shoes-wrapper{
+    .rv-shoes-row{
+        margin: 20px 0;
+    }
+    .rv-shoe-detail-left{
+        float: left;
+        width: 50%;
+        text-align: left;
+    }
+}

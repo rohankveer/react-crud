@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "User 1",
+    "photo": "",
+    "email": "test@test.com",
+    "scans": 4,
+    "lastSeen": "11/16/2016, 12:53:08 PM GMT+5:30"
+  },
+  {
+    "id": 2,
+    "name": "User 2",
+    "photo": "",
+    "email": "test@test.com",
+    "scans": 1,
+    "lastSeen": "11/16/2016, 12:53:08 PM GMT+5:30"
+  },
+  {
+    "id": 3,
+    "name": "User 3",
+    "photo": "",
+    "email": "test@test.com",
+    "scans": 1,
+    "lastSeen": "11/16/2016, 12:53:08 PM GMT+5:30"
+  },
+  {
+    "id": 4,
+    "name": "User 4",
+    "photo": "",
+    "email": "test@test.com",
+    "scans": 1,
+    "lastSeen": "11/16/2016, 12:53:08 PM GMT+5:30"
+  },
+  {
+    "id": 5,
+    "name": "User 5",
+    "photo": "",
+    "email": "test@test.com",
+    "scans": 1,
+    "lastSeen": "11/16/2016, 12:53:08 PM GMT+5:30"
+  },
+  {
+    "id": 6,
+    "name": "User 6",
+    "photo": "",
+    "email": "test@test.com",
+    "scans": 1,
+    "lastSeen": "11/16/2016, 12:53:08 PM GMT+5:30"
+  }
+]

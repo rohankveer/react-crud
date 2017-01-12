@@ -1,0 +1,501 @@
+@font-face {
+  font-family: 'HP Simplified Regular';
+  src: url(fonts/HPSimplified_Rg.ttf); }
+
+.search-header {
+  margin-bottom: 20px; }
+
+.sortable {
+  cursor: pointer; }
+  .sortable:hover {
+    text-decoration: underline; }
+  .sortable .glyphicon {
+    margin-left: 10px; }
+
+#root {
+  max-width: 1170px;
+  margin: 0 auto; }
+
+.container-fluid .main {
+  padding-top: 0; }
+
+.rv-nav.rv-nav-details {
+  float: none; }
+
+.rv-nav {
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding-left: 0;
+  float: left; }
+  .rv-nav li.active {
+    border-bottom: 2px solid #58BFED; }
+  .rv-nav li {
+    float: left;
+    border-bottom: 2px solid transparent;
+    padding: 10px;
+    display: inline-block;
+    list-style-type: none;
+    font-family: "HP Simplified Regular",Arial,sans-serif;
+    font-size: 16px;
+    margin-right: 20px; }
+    .rv-nav li:hover {
+      border-bottom: 2px solid #58BFED; }
+    .rv-nav li a {
+      color: #58BFED; }
+      .rv-nav li a:hover {
+        text-decoration: none; }
+      .rv-nav li a:focus {
+        text-decoration: none;
+        outline: none; }
+
+.navbar-inverse .navbar-brand {
+  margin-bottom: 10px; }
+
+.data-list .table > tbody > tr > td {
+  padding: 15px;
+  vertical-align: middle;
+  font-family: "HP Simplified Regular",Arial,sans-serif;
+  font-size: 16px; }
+
+.data-list .table > thead > tr > th {
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd !important;
+  color: #58AEDF;
+  font-family: "HP Simplified Regular",Arial,sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  padding: 12px; }
+
+.data-list tbody tr {
+  border-left: 5px solid transparent; }
+  .data-list tbody tr:hover {
+    border-left: 4px solid #50B5E2;
+    background-color: #E5F0F7; }
+
+.navbar.navbar-inverse {
+  background-color: #0095D5;
+  border: none; }
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a {
+  color: #fff; }
+
+.login-container {
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  float: right;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 330px;
+  -webkit-box-shadow: 0px 0px 10px 2px #d1cdd1;
+  -moz-box-shadow: 0px 0px 10px 2px #d1cdd1;
+  box-shadow: 0px 0px 10px 2px #d1cdd1;
+  font-family: "HP Simplified Regular",Arial,sans-serif; }
+  .form-signin .btn-primary {
+    margin-bottom: 20px;
+    border-radius: 0; }
+  .form-signin .forgot-password {
+    margin-bottom: 20px;
+    display: inline-block; }
+  .form-signin .error {
+    margin-top: -10px;
+    color: red;
+    padding-left: 5px;
+    margin-bottom: 20px; }
+
+.form-signin-heading {
+  color: #0096D6;
+  text-align: center; }
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 25px; }
+
+.form-signin .checkbox {
+  font-weight: normal; }
+
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px; }
+
+.form-signin .form-control:focus {
+  z-index: 2; }
+
+.form-signin input[type="email"] {
+  margin-bottom: 20px; }
+
+.form-signin input[type="password"] {
+  margin-bottom: 20px; }
+
+.login-footer .copyright {
+  text-align: center;
+  font-family: "HP Simplified Regular",Arial,sans-serif; }
+
+/*
+ * Base structure
+ */
+/*
+ * Global add-ons
+ */
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee; }
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0; }
+
+/*
+ * Sidebar
+ */
+/* Hide for mobile, show later */
+.sidebar {
+  display: none; }
+
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* Scrollable contents if viewport is shorter than content. */
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee; } }
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px;
+  /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px; }
+
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px; }
+
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #428bca; }
+
+li.rv-search {
+  border: none;
+  position: relative;
+  padding: 14px; }
+  li.rv-search:hover {
+    border: none; }
+  li.rv-search input {
+    margin-right: 10px;
+    padding-right: 25px;
+    padding-left: 5px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid;
+    border-radius: 5px;
+    height: 30px; }
+  li.rv-search .glyphicon-search {
+    color: #fff;
+    position: absolute;
+    right: 30px;
+    top: 21px; }
+
+/*
+ * Main content
+ */
+.main {
+  padding: 20px; }
+
+@media (min-width: 768px) {
+  .main {
+    padding-right: 0px;
+    padding-left: 0px; } }
+
+.main .page-header {
+  margin-top: 0; }
+
+/*
+ * Placeholder dashboard ideas
+ */
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center; }
+
+.placeholders h4 {
+  margin-bottom: 0; }
+
+.placeholder {
+  margin-bottom: 20px; }
+
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%; }
+
+.dashboard-container {
+  background-color: #f8f7f7;
+  padding: 30px; }
+  .dashboard-container .rv-dashboard-row {
+    background-color: white; }
+    .dashboard-container .rv-dashboard-row .rv-dashboard-4 {
+      margin: 2% 4%;
+      width: 25%;
+      padding: 0;
+      color: #fff;
+      font-family: "HP Simplified Regular",Arial,sans-serif; }
+      .dashboard-container .rv-dashboard-row .rv-dashboard-4 .rv-total {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 0; }
+      .dashboard-container .rv-dashboard-row .rv-dashboard-4 .rv-total-icon, .dashboard-container .rv-dashboard-row .rv-dashboard-4 .rv-total-cust-icon {
+        float: left;
+        width: 25%;
+        font-size: 30px;
+        text-align: center;
+        padding-top: 20px; }
+      .dashboard-container .rv-dashboard-row .rv-dashboard-4 .rv-total-icon {
+        color: #2574A9; }
+      .dashboard-container .rv-dashboard-row .rv-dashboard-4 .rv-total-cust-icon {
+        color: #2CBCBC; }
+    .dashboard-container .rv-dashboard-row .rv-total-2d-dashboard {
+      border: 2px solid #2574a9; }
+    .dashboard-container .rv-dashboard-row .rv-total-3d-dashboard {
+      border: 2px solid #0096d6; }
+    .dashboard-container .rv-dashboard-row .rv-total-cust-dashboard {
+      border: 2px solid #2cbcbc; }
+    .dashboard-container .rv-dashboard-row .rv-total-2d, .dashboard-container .rv-dashboard-row .rv-total-3d, .dashboard-container .rv-dashboard-row .rv-total-customers {
+      float: left;
+      width: 75%;
+      padding: 10px; }
+    .dashboard-container .rv-dashboard-row .rv-total-2d {
+      background-color: #2574a9; }
+    .dashboard-container .rv-dashboard-row .rv-total-3d {
+      background-color: #0096d6; }
+    .dashboard-container .rv-dashboard-row .rv-total-customers {
+      background-color: #2cbcbc; }
+  .dashboard-container .dashboard-graph-container {
+    background-color: white;
+    margin: 0 3%;
+    padding: 10px; }
+    .dashboard-container .dashboard-graph-container canvas {
+      display: block;
+      margin: 0 auto; }
+  .dashboard-container #canvas-graph {
+    min-height: 230px; }
+  .dashboard-container .rv-dashboard-row-bottom {
+    margin-top: 30px; }
+    .dashboard-container .rv-dashboard-row-bottom h3 {
+      margin-left: 3%;
+      font-family: "HP Simplified Regular",Arial,sans-serif; }
+
+#pie-legend {
+  margin-top: 10px; }
+  #pie-legend .title {
+    display: inline-block;
+    margin: 2px 5px;
+    font-family: "HP Simplified Regular",Arial,sans-serif;
+    border: 1px solid #ccc8c8;
+    padding: 0 5px;
+    border-radius: 5px; }
+    #pie-legend .title .color-sample {
+      width: 15px;
+      height: 10px;
+      display: inline-block;
+      margin-right: 5px; }
+
+/* Graph css */
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges; }
+
+.line {
+  fill: none;
+  stroke-width: 1.5px; }
+
+.label {
+  text-anchor: middle; }
+
+.label rect {
+  fill: white; }
+
+.label-key {
+  font-weight: bold; }
+
+.bar {
+  fill: steelblue; }
+
+.bar:hover {
+  fill: brown; }
+
+/* Graph css ends */
+.col-md-12.rv-siderbar-container {
+  padding-left: 0;
+  padding-right: 0; }
+
+@media only screen and (max-width: 600px) {
+  .dashboard-container .rv-dashboard-row .rv-dashboard-4 {
+    width: 92%;
+    overflow: hidden; }
+  #total-users-chart {
+    width: 100%; } }
+
+.user-list tr:hover {
+  cursor: pointer; }
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #D8D8D9; }
+
+.user-avatar-container {
+  float: left; }
+  .user-avatar-container .user-avatar {
+    height: 50px;
+    width: 50px; }
+
+.rv-file-icon {
+  margin-right: 10px; }
+
+.user-info-container {
+  float: left;
+  margin-left: 20px; }
+  .user-info-container h3 {
+    margin-top: 0; }
+  .user-info-container P {
+    color: #BBBABA;
+    font-size: 16px; }
+
+.rv-page-header h3 {
+  font-family: "HP Simplified Regular",Arial,sans-serif; }
+
+.user-details {
+  margin-bottom: 20px;
+  font-family: "HP Simplified Regular",Arial,sans-serif; }
+  .user-details .rv-user-details {
+    margin-right: 20px; }
+    .user-details .rv-user-details img {
+      margin-right: 10px; }
+
+.v-pagination-block {
+  display: inline-block;
+  float: right;
+  margin-top: 20px;
+  margin-bottom: 0; }
+  .v-pagination-block li {
+    list-style-type: none;
+    float: left;
+    font-family: "HP Simplified Regular",Arial,sans-serif;
+    font-size: 16px;
+    padding: 10px; }
+  .v-pagination-block .v-pagination-nav__page--selected {
+    border-bottom: 1px solid; }
+
+#file-container {
+  padding: 30px 30px 10px 30px; }
+  #file-container:hover {
+    cursor: move; }
+
+.rv-ply-download {
+  float: right;
+  margin-right: 20px;
+  margin-bottom: 20px; }
+
+.glyphicon.glyphicon-remove {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer; }
+
+.rv-loader {
+  border: 10px solid #e4e0e0;
+  border-top: 10px solid #3498db;
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  margin: 35px auto -10px auto;
+  animation: spin 2s linear infinite; }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+.rv-gif-loader {
+  display: block;
+  margin: 0 auto;
+  width: 90%; }
+
+@media only screen and (max-width: 650px) {
+  .rv-nav {
+    margin-top: 0; }
+  .rv-shoes-row .col-sm-12 {
+    margin-bottom: 15px; } }
+
+@media only screen and (max-width: 650px) and (orientation: landscape) {
+  .rv-gif-loader {
+    width: 60%; }
+  .rv-shoes-row .col-md-2 {
+    width: 50%;
+    float: left; }
+    .rv-shoes-row .col-md-2 img {
+      height: auto; } }
+
+.rv-shoe-wrapper .rv-shoe-thumbnail {
+  padding: 10px;
+  border: 1px solid #dcdada;
+  border-radius: 5px;
+  font-family: "HP Simplified Regular",Arial,sans-serif; }
+  .rv-shoe-wrapper .rv-shoe-thumbnail img {
+    width: 100%;
+    height: 250px;
+    display: block;
+    margin: 0 auto; }
+  .rv-shoe-wrapper .rv-shoe-thumbnail .rv-shoe-details {
+    overflow: hidden; }
+    .rv-shoe-wrapper .rv-shoe-thumbnail .rv-shoe-details .rv-shoe-brand {
+      margin-top: 10px;
+      /*color: #0095D5;*/
+      margin-bottom: 5px; }
+    .rv-shoe-wrapper .rv-shoe-thumbnail .rv-shoe-details .rv-shoe-price, .rv-shoe-wrapper .rv-shoe-thumbnail .rv-shoe-details .rv-shoe-category {
+      margin-bottom: 0;
+      font-size: 12px; }
+    .rv-shoe-wrapper .rv-shoe-thumbnail .rv-shoe-details .rv-shoe-model {
+      margin-top: 10px;
+      margin-bottom: 5px; }
+
+.rv-no-results {
+  padding: 10%;
+  color: gray;
+  font-family: "HP Simplified Regular",Arial,sans-serif;
+  font-size: 20px;
+  text-align: center; }
+
+.rv-shoes-wrapper .rv-shoes-row {
+  margin: 20px 0; }
+
+.rv-shoes-wrapper .rv-shoe-detail-left {
+  float: left;
+  width: 50%;
+  text-align: left; }
+
+/*# sourceMappingURL=../js/bundle.map*/

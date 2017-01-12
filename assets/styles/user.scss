@@ -1,0 +1,99 @@
+.user-list{
+  tr:hover{
+    cursor: pointer;
+  }
+}
+.user-avatar{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #D8D8D9;
+}
+.user-avatar-container{
+    float: left;
+    .user-avatar{
+        height: 50px;
+        width: 50px;
+    }
+}
+.rv-file-icon{
+    margin-right: 10px;
+}
+.user-info-container{
+    float: left;
+    margin-left: 20px;
+    h3{
+        margin-top: 0;
+    }
+    P{
+        color: #BBBABA;
+        font-size: 16px;
+    }
+}
+.rv-page-header{
+    h3{
+        font-family: "HP Simplified Regular",Arial,sans-serif;
+    }
+}
+.user-details{
+    margin-bottom: 20px;
+    font-family: "HP Simplified Regular",Arial,sans-serif;
+    .rv-user-details{
+        margin-right: 20px;
+        img{
+            margin-right: 10px;
+        }
+    }
+}
+
+.v-pagination-block{
+    display: inline-block;
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 0;
+    li{
+        list-style-type: none;
+        float: left;
+        font-family: "HP Simplified Regular",Arial,sans-serif;
+        font-size: 16px;
+        padding: 10px;
+    }
+    .v-pagination-nav__page--selected{
+        border-bottom: 1px solid;
+    }
+}
+
+#file-container{
+    padding: 30px 30px 10px 30px;
+    &:hover{
+        cursor: move;
+    }
+}
+
+.rv-ply-download{
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.glyphicon.glyphicon-remove{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.rv-loader {
+    border: 10px solid #e4e0e0;
+    border-top: 10px solid #3498db;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    margin: 35px auto -10px auto;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

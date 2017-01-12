@@ -1,0 +1,25 @@
+@media only screen and (max-width: 650px) {
+    .rv-nav{
+        margin-top: 0;
+    }
+    .rv-shoes-row{
+        .col-sm-12{
+            margin-bottom: 15px;
+        }
+    }
+}
+
+@media only screen and (max-width: 650px) and (orientation: landscape){
+    .rv-gif-loader{
+        width: 60%;
+    }
+    .rv-shoes-row{
+        .col-md-2{
+            width: 50%;
+            float: left;
+            img{
+                height: auto;
+            }
+        }   
+    }
+}

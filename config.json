@@ -1,0 +1,9 @@
+{
+    "getUsers" : "http://ec2-107-20-111-130.compute-1.amazonaws.com:8080/users",
+    "getScans" : "http://ec2-107-20-111-130.compute-1.amazonaws.com:8080/scans",
+    "loginUrl" : "http://ec2-107-20-111-130.compute-1.amazonaws.com:8080/users/signin",
+    "getUsersById" : "http://ec2-107-20-111-130.compute-1.amazonaws.com:8080/users/email/",
+    "getUsersByName" : "http://ec2-107-20-111-130.compute-1.amazonaws.com:8080/users/name/",
+    "getShoes" : "http://ec2-107-20-111-130.compute-1.amazonaws.com:8080/products",
+    "itemsPerPage" : 5
+}
